@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Colours for bottom navigation icons-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="?attr/colorMain" android:state_checked="true" />
+    <item android:color="@android:color/darker_gray" android:state_checked="false" />
+
+</selector>

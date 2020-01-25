@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Light application theme. -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FEFEFE</item>
+        <item name="colorPrimaryDark">#FEFEFE</item>
+        <item name="colorAccent">#4285F4</item>
+        <item name="colorMain">#000000</item>
+        <item name="colorSecondary">#FFFFFF</item>
+        <item name="primaryText">#DE000000</item>
+        <item name="secondaryText">#8A000000</item>
+        <item name="hintText">#61000000</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Dark application theme. -->
+    <style name="DarkTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0B0C11</item>
+        <item name="colorPrimaryDark">#0B0C11</item>
+        <item name="colorAccent">#4285F4</item>
+        <item name="colorMain">#FFFFFF</item>
+        <item name="colorSecondary">#000000</item>
+        <item name="primaryText">#FFFFFFFF</item>
+        <item name="secondaryText">#B3FFFFFF</item>
+        <item name="hintText">#80FFFFFF</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+File based on tutorial:
+KOD Dev (2018) Available at: https://www.youtube.com/playlist?list=PLzLFqCABnRQduspfbu2empaaY9BoIGLDM.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SignupActivity">
+
+    <!-- Primary heading text -->
+
+    <TextView
+        android:id="@+id/text_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="36dp"
+        android:text="Sign up to continue"
+        android:textColor="?attr/primaryText"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Username text -->
+
+    <!-- Kai Zhu (no date) MaterialEditText: EditText in Material Design. Available at: https://github.com/rengwuxian/MaterialEditText. -->
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="?attr/primaryText"
+        android:textColorHint="?attr/hintText"
+        android:textSize="16sp"
+        app:met_baseColor="?attr/primaryText"
+        app:met_floatingLabel="normal"
+        app:met_primaryColor="?attr/colorMain"
+        app:met_textColor="?attr/primaryText"
+        app:met_textColorHint="?attr/hintText" />
+
+    <!-- Full name text -->
+
+    <!-- Kai Zhu (no date) MaterialEditText: EditText in Material Design. Available at: https://github.com/rengwuxian/MaterialEditText. -->
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textColor="?attr/primaryText"
+        android:textColorHint="?attr/hintText"
+        android:textSize="16sp"
+        app:met_baseColor="?attr/primaryText"
+        app:met_floatingLabel="normal"
+        app:met_primaryColor="?attr/colorMain"
+        app:met_textColor="?attr/primaryText"
+        app:met_textColorHint="?attr/hintText" />
+
+    <!-- Bio text -->
+
+    <!-- Kai Zhu (no date) MaterialEditText: EditText in Material Design. Available at: https://github.com/rengwuxian/MaterialEditText. -->
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Bio"
+        android:inputType="text"
+        android:textColor="?attr/primaryText"
+        android:textColorHint="?attr/hintText"
+        android:textSize="16sp"
+        app:met_baseColor="?attr/primaryText"
+        app:met_floatingLabel="normal"
+        app:met_primaryColor="?attr/colorMain"
+        app:met_textColor="?attr/primaryText"
+        app:met_textColorHint="?attr/hintText" />
+
+    <!-- Email text -->
+
+    <!-- Kai Zhu (no date) MaterialEditText: EditText in Material Design. Available at: https://github.com/rengwuxian/MaterialEditText. -->
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="?attr/primaryText"
+        android:textColorHint="?attr/hintText"
+        android:textSize="16sp"
+        app:met_baseColor="?attr/primaryText"
+        app:met_floatingLabel="normal"
+        app:met_primaryColor="?attr/colorMain"
+        app:met_textColor="?attr/primaryText"
+        app:met_textColorHint="?attr/hintText" />
+
+    <!-- Password text -->
+
+    <!-- Kai Zhu (no date) MaterialEditText: EditText in Material Design. Available at: https://github.com/rengwuxian/MaterialEditText. -->
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="?attr/primaryText"
+        android:textColorHint="?attr/hintText"
+        android:textSize="16sp"
+        app:met_baseColor="?attr/primaryText"
+        app:met_floatingLabel="normal"
+        app:met_primaryColor="?attr/colorMain"
+        app:met_textColor="?attr/primaryText"
+        app:met_textColorHint="?attr/hintText" />
+
+    <!-- Sign up button -->
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/background_btn"
+        android:padding="10dp"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Log in text -->
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Already have an account? Log in"
+        android:textColor="?attr/secondaryText"
+        android:textSize="14sp" />
+
+</LinearLayout>

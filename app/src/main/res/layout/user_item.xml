@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+File based on tutorial:
+KOD Dev (2018) Available at: https://www.youtube.com/playlist?list=PLzLFqCABnRQduspfbu2empaaY9BoIGLDM.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:padding="16dp">
+
+    <!-- Profile image -->
+
+    <!-- Henning Dodenhof (no date) CircleImageView: A circular ImageView for Android. Available at: https://github.com/hdodenhof/CircleImageView. -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/image_profile"
+        android:orientation="vertical">
+
+        <!-- Username text -->
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="?attr/primaryText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Full name text -->
+
+        <TextView
+            android:id="@+id/text_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="?attr/secondaryText"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Follow button -->
+
+    <Button
+        android:id="@+id/button_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:padding="4dp"
+        android:textAllCaps="false"
+        android:textColor="?attr/primaryText"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</RelativeLayout>

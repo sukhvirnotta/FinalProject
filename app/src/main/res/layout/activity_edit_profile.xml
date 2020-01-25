@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+File based on tutorial:
+KOD Dev (2018) Available at: https://www.youtube.com/playlist?list=PLzLFqCABnRQduspfbu2empaaY9BoIGLDM.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".EditProfileActivity">
+
+    <!-- Toolbar -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Close image -->
+
+            <ImageView
+                android:id="@+id/image_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close"
+                android:tint="?attr/primaryText" />
+
+            <!-- Save image -->
+
+            <ImageView
+                android:id="@+id/image_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_save"
+                android:tint="?attr/primaryText" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Profile image -->
+
+        <!-- Henning Dodenhof (no date) CircleImageView: A circular ImageView for Android. Available at: https://github.com/hdodenhof/CircleImageView. -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp" />
+
+        <!-- Change photo text -->
+
+        <TextView
+            android:id="@+id/text_changephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Change Photo"
+            android:textColor="?attr/colorMain"
+            android:textSize="14sp" />
+
+        <!-- Full name text -->
+
+        <!-- Kai Zhu (no date) MaterialEditText: EditText in Material Design. Available at: https://github.com/rengwuxian/MaterialEditText. -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:textColor="?attr/primaryText"
+            android:textColorHint="?attr/hintText"
+            android:textSize="16sp"
+            app:met_baseColor="?attr/primaryText"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="?attr/colorMain"
+            app:met_textColor="?attr/primaryText"
+            app:met_textColorHint="?attr/hintText" />
+
+        <!-- Bio text -->
+
+        <!-- Kai Zhu (no date) MaterialEditText: EditText in Material Design. Available at: https://github.com/rengwuxian/MaterialEditText. -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Bio"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:textColor="?attr/primaryText"
+            android:textColorHint="?attr/hintText"
+            android:textSize="16sp"
+            app:met_baseColor="?attr/primaryText"
+            app:met_floatingLabel="normal"
+            app:met_primaryColor="?attr/colorMain"
+            app:met_textColor="?attr/primaryText"
+            app:met_textColorHint="?attr/hintText" />
+
+    </LinearLayout>
+
+</LinearLayout>
