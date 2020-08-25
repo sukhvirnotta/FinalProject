@@ -14,17 +14,6 @@ Clone this repository and import into Android Studio
 git clone https://github.com/sukhvirnotta/FinalProject.git
 ```
 
-## Built With
-
-* [Android Studio](https://developer.android.com/studio) - IDE
-* [Gradle](https://gradle.org/) - Build automation tool
-* [ML Kit](https://developers.google.com/ml-kit) - Image labelling API
-* [Firebase Realtime Database](https://firebase.google.com/docs/database) - Cloud database
-
-## Authors
-
-* **Sukhvir Notta** - [sukhvirnotta](https://github.com/sukhvirnotta)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
